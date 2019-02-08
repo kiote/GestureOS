@@ -31,6 +31,9 @@ def determineDataTrends(xData, yData, xDataThreshold, yDataThreshold):
 
     yRange = max(yData) - min(yData)
 
+    print("xSlope" + xSlope)
+    print("yRange" + yRange)
+
     if xSlope < -xDataThreshold:
 
         gestureDetected = "closer"
