@@ -30,10 +30,9 @@ def determineDataTrends(xData, yData, xDataThreshold, yDataThreshold):
         xSlope = numpy.polyfit(xAxis, xData, 1)[0]
 
     yRange = max(yData) - min(yData)
-
-    print("xSlope" + xSlope)
-    print("yRange" + yRange)
-
+    print('xSlope {0}'.format(xSlope))
+    print('yRange {0}'.format(yRange))
+    
     if xSlope < -xDataThreshold:
 
         gestureDetected = "closer"
